@@ -14,7 +14,7 @@ export const Notify = ({messages}) => {
     return (
         <div className='notify-container'>
             {
-                messages?.map(({user,msg},index)=>{
+                uniqueMessages?.map(({user,msg},index)=>{
                     return <h5 key={index} className='mt-2'><strong>{user}</strong>: <span style={{color:colorPicker(msg)}}>{msg}</span></h5>
                 })
             }
