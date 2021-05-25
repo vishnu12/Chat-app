@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans','Sans-serif';
+  background-color: #e0bdba;
+  box-sizing: border-box;
+}
+
+.home{
+  position: relative;
+  width: 80%;
+  min-height: 500px;
+  margin: 3rem 3rem auto auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #d6dbb6;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home form{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.home .message-container{
+  position: sticky;
+  width: 100%;
+  background-color: inherit;
+  min-height: 95%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 4rem;
+}
+
+.home .message-container h5{
+  color: rgb(100, 23, 223);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.message{
+  margin-top: 1rem;
+  width: 150px;
+  min-height: 50px;
+  border-radius: 7px;
+  color: #000;
+  
+}
+
+.message .msg-child{
+ display: inline; 
+ white-space: initial;
+ word-break: break-all;
+ width: 100%;
+ min-height: 50px;
+ font-size: 14px;
+}
+
+.message-head p{
+  margin-bottom: 0;
+}
+
+
+
+.login-form{
+  margin: 5rem auto;
+  width: 20%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border: 0;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.login-form button{
+  width: 100%;
+}
+
+
+.notify-container{
+  margin: 3rem 2rem auto 3rem;
+  width: 80%;
+  min-height: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #d6dbb6;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+
+
