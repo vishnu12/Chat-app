@@ -1,10 +1,13 @@
 
 const express = require('express');
+const cors=require('cors')
 const app = express();
-const http = require('http');
-const server = http.createServer(app);
-const { Server } = require("socket.io");
-const io = new Server(server)
+app.use(cors())
+const io=require('socket.io')(5000,{
+    cors:{
+        origin:['http://localhost:3000']
+    }
+})
 
 const {addUser,findUser,removeUser,roomData} =require('./controllers/user')
 
@@ -48,8 +51,3 @@ io.on('connection',(socket)=>{
 //         console.log('disconnected');
 //     })
 // })
-
-
-
-const port=5000
-server.listen(port,()=>console.log(`server started at ${port}`))

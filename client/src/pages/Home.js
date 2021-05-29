@@ -4,7 +4,7 @@ import io from 'socket.io-client'
 import { Notify } from '../components/Notify'
 
 export const Home = ({match,location}) => {
-
+    const URL='http://localhost:5000'
     let socket=useRef()
 
     const [user, setUser] = useState('')
@@ -15,7 +15,7 @@ export const Home = ({match,location}) => {
     const [chat, setChat] = useState([])
 
     useEffect(()=>{
-        socket.current = io(); 
+        socket.current = io(URL); 
        setUser(match.params.user)
        setRoom(match.params.room)
       
